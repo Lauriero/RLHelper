@@ -99,6 +99,7 @@ class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		/* We need to ensure that "RLHelper.dll" comes first in this list. */
 		"RLHelper.dll",
+		"AngleSharp.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};

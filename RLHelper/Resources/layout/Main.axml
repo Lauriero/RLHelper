@@ -4,15 +4,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white">
-    <Button
-        android:text="Button"
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button1" />
-    <ImageButton
-        android:src="@android:drawable/ic_menu_gallery"
-        android:layout_width="88.5dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageButton1"
-        android:background="@android:color/transparent" />
+        android:id="@+id/linearLayout1">
+        <EditText
+            android:layout_width="231.0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/editText1"
+            android:textColor="@android:color/black" />
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="129.0dp"
+            android:layout_height="match_parent"
+            android:text="Обработать" />
+    </LinearLayout>
+    <TextView
+        android:text="Text"
+        android:layout_width="230.0dp"
+        android:layout_height="30.0dp"
+        android:id="@+id/textView1"
+        android:textColor="@android:color/black" />
 </LinearLayout>
