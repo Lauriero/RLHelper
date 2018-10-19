@@ -7,7 +7,8 @@ namespace RLHelper
     [Activity(Label = "RLHelper", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        PageReceiver parser;
+        PageReceiver reciever;
+        PageParser parser;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -16,13 +17,25 @@ namespace RLHelper
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            parser = new PageReceiver();
-            parser.OnPageParse += Parser_OnPageParser;
-            parser.OnExceptionThrow += Parser_OnExceptionThrow;
+            reciever = new PageReceiver();
+            reciever.OnPageParse += Parser_OnPageParser;
+            reciever.OnExceptionThrow += Parser_OnExceptionThrow;
+
+            parser = new PageParser();
+            parser.OnNewData += Parser_OnNewData;
+
 
             Button handleButton = FindViewById<Button>(Resource.Id.button1);
 
             handleButton.Click += HandleButton_Click;
+
+
+        }
+
+        private void Parser_OnNewData(string data)
+        {
+            TextView tw = FindViewById<TextView>(Resource.Id.textView1);
+            tw.Text = data;
         }
 
         private void HandleButton_Click(object sender, System.EventArgs e)
@@ -30,21 +43,20 @@ namespace RLHelper
             EditText textInput = FindViewById<EditText>(Resource.Id.editText1);
             string text = textInput.Text;
 
-           
-            parser.Start(text);
+
+            reciever.Start(text);
         }
 
         private void Parser_OnPageParser(string resp)
         {
-            TextView tw = FindViewById<TextView>(Resource.Id.textView1);
-            tw.Text = resp;
+            parser.Parse(resp);
         }
 
         private void Parser_OnExceptionThrow(System.Exception ex)
         {
             Toast.MakeText(this, ex.ToString(), ToastLength.Short).Show();
 
-            ;
+
         }
 
     }
