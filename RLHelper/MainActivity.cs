@@ -55,8 +55,6 @@ namespace RLHelper
         private void Parser_OnExceptionThrow(System.Exception ex)
         {
             Toast.MakeText(this, ex.ToString(), ToastLength.Short).Show();
-
-
         }
 
     }
