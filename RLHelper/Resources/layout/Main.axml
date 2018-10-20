@@ -22,8 +22,9 @@
     </LinearLayout>
     <TextView
         android:text="Text"
-        android:layout_width="230.0dp"
-        android:layout_height="30.0dp"
+        android:layout_width="357.5dp"
+        android:layout_height="557.5dp"
         android:id="@+id/textView1"
-        android:textColor="@android:color/black" />
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="528.0dp" />
 </LinearLayout>

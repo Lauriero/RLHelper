@@ -32,10 +32,10 @@ namespace RLHelper
 
         }
 
-        private void Parser_OnNewData(string data)
+        private void Parser_OnNewData(MorphemeData data)
         {
             TextView tw = FindViewById<TextView>(Resource.Id.textView1);
-            tw.Text = data;
+            tw.Text = data.prefixFirst + '\n' + data.root + '\n' + data.suffixFirst + '\n' + data.ending;
         }
 
         private void HandleButton_Click(object sender, System.EventArgs e)

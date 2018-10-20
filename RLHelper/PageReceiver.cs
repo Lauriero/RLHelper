@@ -16,7 +16,7 @@ namespace RLHelper
         public event Action<string> OnPageParse;
         public event Action<Exception> OnExceptionThrow;
 
-        public async void Start(string word) {
+        public void Start(string word) {
             createHttpRequestAsync(word);
         }
 

@@ -14,8 +14,14 @@ namespace RLHelper
 {
     class MorphemeData
     {
+        public string prefixFirst { get; set; }
+        public string prefixSecond { get; set; }
         public string root { get; set; }
-        
+        public string suffixFirst { get; set; }
+        public string suffixSecond { get; set; }
+        public string basis { get; set; }
+        public string ending { get; set; }
+        public string postfix { get; set; }
 
     }
 }
