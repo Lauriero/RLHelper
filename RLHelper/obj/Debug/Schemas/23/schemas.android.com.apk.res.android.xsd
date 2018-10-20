@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>20.10.2018 17:36:01</xs:documentation>
+    <xs:documentation>20.10.2018 23:38:57</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -773,7 +773,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -1405,7 +1409,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2076,7 +2084,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2437,7 +2449,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -2749,7 +2765,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3371,7 +3391,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3687,7 +3711,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4019,7 +4047,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4294,7 +4326,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4546,7 +4582,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5116,7 +5156,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5532,7 +5576,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5914,7 +5962,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -6351,7 +6403,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -6663,7 +6719,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -6975,7 +7035,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -7327,7 +7391,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -7639,7 +7707,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -8061,7 +8133,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -8429,7 +8505,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -8705,7 +8785,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -9139,7 +9223,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9547,7 +9635,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10073,7 +10165,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10537,7 +10633,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -10971,7 +11071,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -11581,7 +11685,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11815,7 +11923,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12049,7 +12161,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12283,7 +12399,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12517,7 +12637,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12751,7 +12875,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12985,7 +13113,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13219,7 +13351,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13647,7 +13783,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13908,7 +14048,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14142,7 +14286,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14376,7 +14524,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14610,7 +14762,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14884,7 +15040,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15118,7 +15278,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -15430,7 +15594,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15704,7 +15872,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16029,7 +16201,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16263,7 +16439,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16717,9 +16897,6 @@
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/checkBox1" />
             <xs:enumeration value="@id/button1" />
-            <xs:enumeration value="@id/editText1" />
-            <xs:enumeration value="@id/linearLayout1" />
-            <xs:enumeration value="@id/textView1" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -16794,7 +16971,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17138,7 +17319,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17467,7 +17652,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18029,7 +18218,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18349,7 +18542,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18743,7 +18940,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19097,7 +19298,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19347,7 +19552,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20042,7 +20251,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20398,7 +20611,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -21388,7 +21605,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21634,7 +21855,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -21909,7 +22134,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22183,7 +22412,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22417,7 +22650,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22651,7 +22888,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -22885,7 +23126,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23119,7 +23364,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23826,7 +24075,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -24077,7 +24330,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -24389,7 +24646,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -25094,7 +25355,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -25446,7 +25711,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25861,7 +26130,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26205,7 +26478,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26439,7 +26716,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27217,7 +27498,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27451,7 +27736,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27685,7 +27974,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27919,7 +28212,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28333,7 +28630,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28567,7 +28868,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -28969,7 +29274,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -29203,7 +29512,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -29515,7 +29828,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -30192,7 +30509,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -30719,7 +31040,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -31089,7 +31414,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32274,7 +32603,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32549,7 +32882,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32874,7 +33211,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -33188,7 +33529,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -33422,7 +33767,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -33696,7 +34045,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -33930,7 +34283,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -34311,7 +34668,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -34545,7 +34906,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -34857,7 +35222,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -35169,7 +35538,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -35481,7 +35854,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -35793,7 +36170,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36053,7 +36434,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36287,7 +36672,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36521,7 +36910,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36755,7 +37148,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36989,7 +37386,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -37397,7 +37798,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -37631,7 +38036,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -37865,7 +38274,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -39036,7 +39449,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -39860,7 +40277,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -40265,7 +40686,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -41014,7 +41439,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -41474,7 +41903,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -41724,7 +42157,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -41958,7 +42395,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -42192,7 +42633,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -42504,7 +42949,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -42868,7 +43317,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -43102,7 +43555,11 @@
       <xs:union memberTypes="xs:string">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:enumeration value="@drawable/bg_image" />
+            <xs:enumeration value="@drawable/connectwork" />
             <xs:enumeration value="@drawable/icon" />
+            <xs:enumeration value="@drawable/roundedpanel" />
+            <xs:enumeration value="@drawable/white-cubes" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />

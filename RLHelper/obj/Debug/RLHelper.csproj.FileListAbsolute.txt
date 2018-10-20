@@ -83,5 +83,9 @@ C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\android\assets\S
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\bin\Debug\AngleSharp.dll
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\bin\Debug\AngleSharp.xml
+C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\res\drawable\bg_image.xml
+C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\res\drawable\roundedpanel.xml
+C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\res\drawable\white-cubes.png
+C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\res\drawable\connectwork.png
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\RLHelper.dll.mdb
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\bin\Debug\RLHelper.dll.mdb
