@@ -3,12 +3,47 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
     android:minWidth="25px"
-    android:minHeight="25px">
-    <Button
-        android:text="Button"
-        android:layout_width="match_parent"
+    android:minHeight="25px"
+    android:paddingTop="15dp"
+    android:background="@drawable/bg">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="327.5dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button1" />
+        android:id="@+id/linearLayout1"
+        android:background="@drawable/roundedpanel"
+        android:layout_gravity="center"
+        android:elevation="20dp"
+        android:layout_marginBottom="20dp">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="71.5dp"
+            android:id="@+id/editText1" />
+        <Button
+            android:text="Обработать"
+            android:layout_width="153.5dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button1"
+            android:layout_gravity="right"
+            android:textColor="@android:color/white"
+            android:background="#FF7F00"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="327.5dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:background="@drawable/roundedpanel"
+        android:layout_gravity="center"
+        android:elevation="20dp"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <TextView
+            android:text="Text"
+            android:layout_width="match_parent"
+            android:layout_height="388.5dp"
+            android:id="@+id/textView1" />
+    </LinearLayout>
 </LinearLayout>
