@@ -20,4 +20,5 @@
       </intent-filter>
     </receiver>
   </application>
+  <activity android:name=".MainActivity" android:windowSoftInputMode="stateUnchanged|adjustResize"></activity>
 </manifest>

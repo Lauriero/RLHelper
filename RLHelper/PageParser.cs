@@ -1,16 +1,20 @@
 ﻿using AngleSharp.Parser.Html;
 using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
 
 namespace RLHelper
 {
     class PageParser
     {
 
-        public event Action<MorphemeData> OnNewData;
+        public event Action<MorphemeData> OnNewMorphemeData;
+        public event Action<List<Spell>> OnNewSpellData;
 
         HtmlParser parser = new HtmlParser();
 
-        public void Parse(string response) {
+        public void MorphemeParse(string response) {
 
             MorphemeData data = new MorphemeData();
 
@@ -21,6 +25,8 @@ namespace RLHelper
             var trS = t2.QuerySelectorAll("tr");
 
             foreach (var tr in trS) {
+                if (tr.QuerySelectorAll("td").Length < 2) { return; }
+
                 var key = tr.QuerySelectorAll("td")[1];
                 var value = tr.QuerySelectorAll("td")[0];
 
@@ -43,7 +49,49 @@ namespace RLHelper
                 }
             }
 
-            OnNewData?.Invoke(data);
+            OnNewMorphemeData?.Invoke(data);
+        }
+
+        public async Task SpellingParse(string response, string queryWord) {
+
+            List<Spell> spells = new List<Spell>();
+
+            var document = await parser.ParseAsync(response);
+
+            var div = document.QuerySelector("div#main");
+
+            if (div.QuerySelectorAll("p").Length < 2) {
+                spells.Add(new Spell() { word = queryWord, spellsPos = new List<int>() });
+                OnNewSpellData?.Invoke(spells);
+                return;
+            }
+
+            var p = div.QuerySelectorAll("p")[1];
+
+            string words = p.TextContent.Replace("Возможное правильное написание:", "").Replace(" ", "");
+
+            foreach (string word in words.Split(',')) {
+                Spell spell = new Spell() {
+                    word = word,
+                    spellsPos = new List<int>()
+                };
+
+                for (int i = 0; i < word.Length; ++i) {
+                    if (queryWord.Length > i) {
+
+                        if (word[i] != queryWord[i]) {
+                            spell.spellsPos.Add(i);            
+                        }
+                    } 
+                }
+
+                spells.Add(spell);
+            }
+
+            
+
+            OnNewSpellData?.Invoke(spells);
+
         }
     }
 }

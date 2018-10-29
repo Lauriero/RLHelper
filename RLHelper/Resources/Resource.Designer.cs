@@ -28,6 +28,22 @@ namespace RLHelper
 		{
 		}
 		
+		public partial class Animation
+		{
+			
+			// aapt resource value: 0x7f040000
+			public const int animation = 2130968576;
+			
+			static Animation()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Animation()
+			{
+			}
+		}
+		
 		public partial class Attribute
 		{
 			
@@ -53,6 +69,9 @@ namespace RLHelper
 			// aapt resource value: 0x7f020002
 			public const int roundedPanel = 2130837506;
 			
+			// aapt resource value: 0x7f020003
+			public const int roundedtopPanel = 2130837507;
+			
 			static Drawable()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -66,17 +85,26 @@ namespace RLHelper
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050002
-			public const int button1 = 2131034114;
+			// aapt resource value: 0x7f060000
+			public const int bottom_sheet = 2131099648;
 			
-			// aapt resource value: 0x7f050001
-			public const int editText1 = 2131034113;
+			// aapt resource value: 0x7f060004
+			public const int button1 = 2131099652;
 			
-			// aapt resource value: 0x7f050000
-			public const int linearLayout1 = 2131034112;
+			// aapt resource value: 0x7f060003
+			public const int editText1 = 2131099651;
 			
-			// aapt resource value: 0x7f050003
-			public const int textView1 = 2131034115;
+			// aapt resource value: 0x7f060006
+			public const int generalSpellView = 2131099654;
+			
+			// aapt resource value: 0x7f060002
+			public const int linearLayout1 = 2131099650;
+			
+			// aapt resource value: 0x7f060001
+			public const int relativeLayout1 = 2131099649;
+			
+			// aapt resource value: 0x7f060005
+			public const int spellsLayout = 2131099653;
 			
 			static Id()
 			{
@@ -92,7 +120,13 @@ namespace RLHelper
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int Main = 2130903040;
+			public const int bottom_sheet = 2130903040;
+			
+			// aapt resource value: 0x7f030001
+			public const int Main = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int testLayout = 2130903042;
 			
 			static Layout()
 			{
@@ -107,11 +141,11 @@ namespace RLHelper
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f040001
-			public const int ApplicationName = 2130968577;
+			// aapt resource value: 0x7f050001
+			public const int ApplicationName = 2131034113;
 			
-			// aapt resource value: 0x7f040000
-			public const int Hello = 2130968576;
+			// aapt resource value: 0x7f050000
+			public const int Hello = 2131034112;
 			
 			static String()
 			{
