@@ -1,4 +1,0 @@
-RLHelper.MainActivity, RLHelper;md5abcb2c19f1fad1c04f542b05bd5e9050.MainActivity
-RLHelper.MainActivity, RLHelper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5abcb2c19f1fad1c04f542b05bd5e9050.MainActivity
-RLHelper.MainActivity;md5abcb2c19f1fad1c04f542b05bd5e9050.MainActivity
-rlhelper.MainActivity;md5abcb2c19f1fad1c04f542b05bd5e9050.MainActivity
