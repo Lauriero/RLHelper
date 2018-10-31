@@ -4,6 +4,6 @@
     <SelectedDevice>VisualStudio_android-23_x86_phone</SelectedDevice>
     <DefaultDevice>VisualStudio_android-23_x86_phone</DefaultDevice>
     <AndroidDesignerPreferredDevice>Galaxy Nexus</AndroidDesignerPreferredDevice>
-    <AndroidDesignerPreferredTheme>Theme.DeviceDefault.Light.NoActionBar</AndroidDesignerPreferredTheme>
+    <AndroidDesignerPreferredTheme>Theme.DeviceDefault</AndroidDesignerPreferredTheme>
   </PropertyGroup>
 </Project>
