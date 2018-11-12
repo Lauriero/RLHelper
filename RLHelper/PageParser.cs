@@ -54,7 +54,7 @@ namespace RLHelper
 
         public async Task SpellingParse(string response, string queryWord) {
 
-            Spell sp = new Spell();
+            Spell sp;
 
             var document = await parser.ParseAsync(response);
             var div = document.QuerySelector("div#main");
@@ -73,16 +73,20 @@ namespace RLHelper
             string words = p.TextContent.Replace("Возможное правильное написание:", "").Replace(" ", "");
             string rightWord = words.Split(',')[0];
 
-            Spell spell = new Spell() {
-                word = rightWord,
-                spellsPos = new List<int>()
-            };
+            sp = new Spell();
+
+            sp.word = rightWord;
+            sp.spellsPos = new List<int>();
+
+            //Spell spell = new Spell() {
+            //    word = rightWord,
+            //    spellsPos = new List<int>()
+            //};
 
             for (int i = 0; i < rightWord.Length; ++i) {
                 if (queryWord.Length > i) {
-
                     if (rightWord[i] != queryWord[i]) {
-                        spell.spellsPos.Add(i);            
+                        sp.spellsPos.Add(i);            
                     }
                 } 
             }

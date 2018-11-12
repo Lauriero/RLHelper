@@ -86,5 +86,6 @@ C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\android\assets\S
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\android\assets\System.Xml.Linq.dll.mdb
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\res\drawable\strilochkonormalnox2.png
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\res\drawable\strilochkanormalnox3.png
+C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\RLHelper.csprojResolveAssemblyReference.cache
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\RLHelper.dll.mdb
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\bin\Debug\RLHelper.dll.mdb

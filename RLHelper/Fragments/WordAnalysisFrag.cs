@@ -23,6 +23,8 @@ namespace RLHelper.Fragments
         string handleWord = "";
         string selectedText = "";
 
+        bool isOpen = true;
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -59,9 +61,24 @@ namespace RLHelper.Fragments
         private void Parser_OnNewSpellData(Spell sp)
         { 
             colorText(view.FindViewById<TextView>(Resource.Id.generalSpellView), sp.word, sp.spellsPos);
-            
-            var interpolator = new Android.Views.Animations.OvershootInterpolator(5);
-            bottomSheetFragment.Animate().TranslationYBy(50).SetDuration(300);
+
+            Paint pt = new Paint();
+            pt.SetARGB(255, 0, 255, 0);
+
+            string prefix = "пре";
+
+            LinearLayout ll = view.FindViewById<LinearLayout>(Resource.Id.canvasLayout);
+            TextView tw = view.FindViewById<TextView>(Resource.Id.generalSpellView);
+
+
+            Bitmap bt = Bitmap.CreateBitmap(ll.Width, ll.Height, Bitmap.Config.Argb8888);
+
+            Canvas canvas = new Canvas(bt);
+            canvas.DrawRect(new Rect((int)GetScreenX<TextView>(tw) - 15, 35, (int)GetScreenX<TextView>(tw) - 15 + prefix.Length * tw.Width / tw.Text.Length, 40), pt);
+            canvas.DrawRect(new Rect((int)GetScreenX<TextView>(tw) - 15 + prefix.Length * tw.Width / tw.Text.Length - 5, 35, (int)GetScreenX<TextView>(tw) - 15 + prefix.Length * tw.Width / tw.Text.Length, 47), pt);
+
+            ll.SetBackgroundDrawable(new BitmapDrawable(bt));
+
         }
 
         private void colorText(TextView tw, string text, List<int> colorPos)
@@ -90,33 +107,20 @@ namespace RLHelper.Fragments
 
             EditText textInput = view.FindViewById<EditText>(Resource.Id.inputText);
             string text = textInput.Text;
-            //handleWord = text;
+            handleWord = text;
 
-            //await reciever.createHttpPostRequestAsync(text);
+            await reciever.createHttpPostRequestAsync(text);
 
-            var interpolator = new Android.Views.Animations.OvershootInterpolator(5);
-            bottomSheetFragment.Animate().SetInterpolator(interpolator)
-                                .TranslationYBy(int.Parse(text))
-                                .SetDuration(500);
 
-            Paint pt = new Paint();
-            pt.SetARGB(255, 0, 255, 0);
+            if (isOpen) {
+                var interpolator = new Android.Views.Animations.OvershootInterpolator(5);
+                bottomSheetFragment.Animate().SetInterpolator(interpolator)
+                                    .TranslationYBy(-310)
+                                    .SetDuration(500);
 
-            string prefix = "пре";
-
-            LinearLayout ll = view.FindViewById<LinearLayout>(Resource.Id.canvasLayout);
-            TextView tw = view.FindViewById<TextView>(Resource.Id.generalSpellView);
+                isOpen = false;
+            }
             
-
-            Bitmap bt = Bitmap.CreateBitmap(ll.Width, ll.Height, Bitmap.Config.Argb8888);
-
-            Canvas canvas = new Canvas(bt);
-            canvas.DrawRect(new Rect((int)GetScreenX<TextView>(tw) - 15, 35, (int)GetScreenX<TextView>(tw) - 15 + prefix.Length * tw.Width / tw.Text.Length, 40), pt);
-            canvas.DrawRect(new Rect((int)GetScreenX<TextView>(tw) - 15 + prefix.Length * tw.Width / tw.Text.Length - 5, 35, (int)GetScreenX<TextView>(tw) - 15 + prefix.Length * tw.Width / tw.Text.Length, 47), pt);
-
-            ll.SetBackgroundDrawable(new BitmapDrawable(bt));
-
-
         }
 
         public static double GetScreenX<TRenderer>(TRenderer renderer) where TRenderer : View
