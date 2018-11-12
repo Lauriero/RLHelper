@@ -757,6 +757,106 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int layout=0x7f0100b6;
+        /** <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_aspectRatio=0x7f0100ed;
+        /** <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_heightPercent=0x7f0100e5;
+        /** <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_marginBottomPercent=0x7f0100ea;
+        /** <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_marginEndPercent=0x7f0100ec;
+        /** <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_marginLeftPercent=0x7f0100e7;
+        /** <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_marginPercent=0x7f0100e6;
+        /** <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_marginRightPercent=0x7f0100e9;
+        /** <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_marginStartPercent=0x7f0100eb;
+        /** <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_marginTopPercent=0x7f0100e8;
+        /** <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int layout_widthPercent=0x7f0100e4;
         /** <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
@@ -1821,7 +1921,7 @@ containing a value of this type.
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020050;
         public static final int abc_textfield_search_material=0x7f020051;
         public static final int abc_vector_test=0x7f020052;
-        public static final int bg=0x7f020053;
+        public static final int arrow=0x7f020053;
         public static final int icon=0x7f020054;
         public static final int notification_action_background=0x7f020055;
         public static final int notification_bg=0x7f020056;
@@ -1831,15 +1931,17 @@ containing a value of this type.
         public static final int notification_bg_normal=0x7f02005a;
         public static final int notification_bg_normal_pressed=0x7f02005b;
         public static final int notification_icon_background=0x7f02005c;
-        public static final int notification_template_icon_bg=0x7f020061;
-        public static final int notification_template_icon_low_bg=0x7f020062;
+        public static final int notification_template_icon_bg=0x7f020063;
+        public static final int notification_template_icon_low_bg=0x7f020064;
         public static final int notification_tile_bg=0x7f02005d;
         public static final int notify_panel_notification_icon_bg=0x7f02005e;
         public static final int roundedpanel=0x7f02005f;
         public static final int roundedtoppanel=0x7f020060;
+        public static final int strilochkanormalnox3=0x7f020061;
+        public static final int strilochkonormalnox2=0x7f020062;
     }
     public static final class id {
-        public static final int action0=0x7f0a0061;
+        public static final int action0=0x7f0a0062;
         public static final int action_bar=0x7f0a0047;
         public static final int action_bar_activity_content=0x7f0a0000;
         public static final int action_bar_container=0x7f0a0046;
@@ -1847,75 +1949,77 @@ containing a value of this type.
         public static final int action_bar_spinner=0x7f0a0001;
         public static final int action_bar_subtitle=0x7f0a0025;
         public static final int action_bar_title=0x7f0a0024;
-        public static final int action_container=0x7f0a005e;
+        public static final int action_container=0x7f0a005f;
         public static final int action_context_bar=0x7f0a0048;
-        public static final int action_divider=0x7f0a0065;
-        public static final int action_image=0x7f0a005f;
+        public static final int action_divider=0x7f0a0066;
+        public static final int action_image=0x7f0a0060;
         public static final int action_menu_divider=0x7f0a0002;
         public static final int action_menu_presenter=0x7f0a0003;
         public static final int action_mode_bar=0x7f0a0044;
         public static final int action_mode_bar_stub=0x7f0a0043;
         public static final int action_mode_close_button=0x7f0a0026;
-        public static final int action_text=0x7f0a0060;
-        public static final int actions=0x7f0a006e;
+        public static final int action_text=0x7f0a0061;
+        public static final int actions=0x7f0a006f;
         public static final int activity_chooser_view_content=0x7f0a0027;
         public static final int add=0x7f0a0013;
         public static final int alertTitle=0x7f0a003b;
         public static final int always=0x7f0a001d;
         public static final int beginning=0x7f0a001a;
         public static final int bottom=0x7f0a0022;
-        public static final int bottomsheetfragContent=0x7f0a0078;
-        public static final int button1=0x7f0a0077;
+        public static final int bottomsheetfragContent=0x7f0a007a;
         public static final int buttonPanel=0x7f0a002e;
-        public static final int cancel_action=0x7f0a0062;
+        public static final int cancel_action=0x7f0a0063;
+        public static final int canvasLayout=0x7f0a0058;
         public static final int checkbox=0x7f0a003e;
-        public static final int chronometer=0x7f0a006a;
+        public static final int chronometer=0x7f0a006b;
         public static final int collapseActionView=0x7f0a001e;
         public static final int contentPanel=0x7f0a0031;
-        public static final int controlLL=0x7f0a0075;
-        public static final int currentlayoutContent=0x7f0a005d;
+        public static final int controlLL=0x7f0a0077;
+        public static final int currentlayoutContent=0x7f0a005e;
         public static final int custom=0x7f0a0038;
         public static final int customPanel=0x7f0a0037;
         public static final int decor_content_parent=0x7f0a0045;
         public static final int default_activity_button=0x7f0a002a;
         public static final int disableHome=0x7f0a000c;
-        public static final int editText1=0x7f0a0076;
         public static final int edit_query=0x7f0a0049;
         public static final int end=0x7f0a001b;
-        public static final int end_padder=0x7f0a0074;
+        public static final int end_padder=0x7f0a0075;
         public static final int expand_activities_button=0x7f0a0028;
         public static final int expanded_menu=0x7f0a003d;
-        public static final int generalSpellView=0x7f0a0058;
+        public static final int generalSpellView=0x7f0a0059;
+        public static final int handleBtn=0x7f0a0079;
         public static final int home=0x7f0a0004;
         public static final int homeAsUp=0x7f0a000d;
         public static final int icon=0x7f0a002c;
-        public static final int icon_group=0x7f0a006f;
+        public static final int icon_group=0x7f0a0070;
         public static final int ifRoom=0x7f0a001f;
         public static final int image=0x7f0a0029;
-        public static final int info=0x7f0a006b;
-        public static final int line1=0x7f0a0070;
-        public static final int line3=0x7f0a0072;
+        public static final int imageView1=0x7f0a0057;
+        public static final int info=0x7f0a006c;
+        public static final int inputText=0x7f0a0078;
+        public static final int line1=0x7f0a0071;
+        public static final int line3=0x7f0a0073;
         public static final int linearLayout1=0x7f0a0056;
-        public static final int linearLayout2=0x7f0a0059;
-        public static final int linearLayout3=0x7f0a005b;
+        public static final int linearLayout2=0x7f0a005a;
+        public static final int linearLayout3=0x7f0a005c;
         public static final int listMode=0x7f0a0009;
         public static final int list_item=0x7f0a002b;
-        public static final int media_actions=0x7f0a0064;
+        public static final int media_actions=0x7f0a0065;
         public static final int middle=0x7f0a001c;
-        public static final int morphemeTv=0x7f0a005a;
+        public static final int morphemeTv=0x7f0a005b;
         public static final int multiply=0x7f0a0014;
         public static final int never=0x7f0a0020;
         public static final int none=0x7f0a000e;
         public static final int normal=0x7f0a000a;
-        public static final int notification_background=0x7f0a006d;
-        public static final int notification_main_column=0x7f0a0067;
-        public static final int notification_main_column_container=0x7f0a0066;
+        public static final int notification_background=0x7f0a006e;
+        public static final int notification_main_column=0x7f0a0068;
+        public static final int notification_main_column_container=0x7f0a0067;
         public static final int parentPanel=0x7f0a0030;
         public static final int progress_circular=0x7f0a0005;
         public static final int progress_horizontal=0x7f0a0006;
         public static final int radio=0x7f0a0040;
-        public static final int right_icon=0x7f0a006c;
-        public static final int right_side=0x7f0a0068;
+        public static final int right_icon=0x7f0a006d;
+        public static final int right_side=0x7f0a0069;
         public static final int screen=0x7f0a0015;
         public static final int scrollIndicatorDown=0x7f0a0036;
         public static final int scrollIndicatorUp=0x7f0a0032;
@@ -1936,21 +2040,20 @@ containing a value of this type.
         public static final int showHome=0x7f0a0010;
         public static final int showTitle=0x7f0a0011;
         public static final int spacer=0x7f0a002f;
-        public static final int spellsLayout=0x7f0a0057;
-        public static final int spellsTv=0x7f0a005c;
+        public static final int spellsTv=0x7f0a005d;
         public static final int split_action_bar=0x7f0a0007;
         public static final int src_atop=0x7f0a0016;
         public static final int src_in=0x7f0a0017;
         public static final int src_over=0x7f0a0018;
-        public static final int status_bar_latest_event_content=0x7f0a0063;
+        public static final int status_bar_latest_event_content=0x7f0a0064;
         public static final int submenuarrow=0x7f0a0041;
         public static final int submit_area=0x7f0a0052;
         public static final int tabMode=0x7f0a000b;
-        public static final int text=0x7f0a0073;
-        public static final int text2=0x7f0a0071;
+        public static final int text=0x7f0a0074;
+        public static final int text2=0x7f0a0072;
         public static final int textSpacerNoButtons=0x7f0a0035;
         public static final int textSpacerNoTitle=0x7f0a0034;
-        public static final int time=0x7f0a0069;
+        public static final int time=0x7f0a006a;
         public static final int title=0x7f0a002d;
         public static final int titleDividerNoCustom=0x7f0a003c;
         public static final int title_template=0x7f0a003a;
@@ -1959,6 +2062,7 @@ containing a value of this type.
         public static final int up=0x7f0a0008;
         public static final int useLogo=0x7f0a0012;
         public static final int withText=0x7f0a0021;
+        public static final int wrapContent=0x7f0a0076;
         public static final int wrap_content=0x7f0a0019;
     }
     public static final class integer {
@@ -5756,6 +5860,199 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name RLHelper.RLHelper:subMenuArrow
         */
         public static final int MenuView_subMenuArrow = 8;
+        /** Attributes that can be used with a PercentLayout_Layout.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_aspectRatio RLHelper.RLHelper:layout_aspectRatio}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_heightPercent RLHelper.RLHelper:layout_heightPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginBottomPercent RLHelper.RLHelper:layout_marginBottomPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginEndPercent RLHelper.RLHelper:layout_marginEndPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginLeftPercent RLHelper.RLHelper:layout_marginLeftPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginPercent RLHelper.RLHelper:layout_marginPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginRightPercent RLHelper.RLHelper:layout_marginRightPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginStartPercent RLHelper.RLHelper:layout_marginStartPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_marginTopPercent RLHelper.RLHelper:layout_marginTopPercent}</code></td><td></td></tr>
+           <tr><td><code>{@link #PercentLayout_Layout_layout_widthPercent RLHelper.RLHelper:layout_widthPercent}</code></td><td></td></tr>
+           </table>
+           @see #PercentLayout_Layout_layout_aspectRatio
+           @see #PercentLayout_Layout_layout_heightPercent
+           @see #PercentLayout_Layout_layout_marginBottomPercent
+           @see #PercentLayout_Layout_layout_marginEndPercent
+           @see #PercentLayout_Layout_layout_marginLeftPercent
+           @see #PercentLayout_Layout_layout_marginPercent
+           @see #PercentLayout_Layout_layout_marginRightPercent
+           @see #PercentLayout_Layout_layout_marginStartPercent
+           @see #PercentLayout_Layout_layout_marginTopPercent
+           @see #PercentLayout_Layout_layout_widthPercent
+         */
+        public static final int[] PercentLayout_Layout = {
+            0x7f0100e4, 0x7f0100e5, 0x7f0100e6, 0x7f0100e7,
+            0x7f0100e8, 0x7f0100e9, 0x7f0100ea, 0x7f0100eb,
+            0x7f0100ec, 0x7f0100ed
+        };
+        /**
+          <p>This symbol is the offset where the {@link RLHelper.RLHelper.R.attr#layout_aspectRatio}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name RLHelper.RLHelper:layout_aspectRatio
+        */
+        public static final int PercentLayout_Layout_layout_aspectRatio = 9;
+        /**
+          <p>This symbol is the offset where the {@link RLHelper.RLHelper.R.attr#layout_heightPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name RLHelper.RLHelper:layout_heightPercent
+        */
+        public static final int PercentLayout_Layout_layout_heightPercent = 1;
+        /**
+          <p>This symbol is the offset where the {@link RLHelper.RLHelper.R.attr#layout_marginBottomPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name RLHelper.RLHelper:layout_marginBottomPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginBottomPercent = 6;
+        /**
+          <p>This symbol is the offset where the {@link RLHelper.RLHelper.R.attr#layout_marginEndPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name RLHelper.RLHelper:layout_marginEndPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginEndPercent = 8;
+        /**
+          <p>This symbol is the offset where the {@link RLHelper.RLHelper.R.attr#layout_marginLeftPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name RLHelper.RLHelper:layout_marginLeftPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginLeftPercent = 3;
+        /**
+          <p>This symbol is the offset where the {@link RLHelper.RLHelper.R.attr#layout_marginPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name RLHelper.RLHelper:layout_marginPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginPercent = 2;
+        /**
+          <p>This symbol is the offset where the {@link RLHelper.RLHelper.R.attr#layout_marginRightPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name RLHelper.RLHelper:layout_marginRightPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginRightPercent = 5;
+        /**
+          <p>This symbol is the offset where the {@link RLHelper.RLHelper.R.attr#layout_marginStartPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name RLHelper.RLHelper:layout_marginStartPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginStartPercent = 7;
+        /**
+          <p>This symbol is the offset where the {@link RLHelper.RLHelper.R.attr#layout_marginTopPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name RLHelper.RLHelper:layout_marginTopPercent
+        */
+        public static final int PercentLayout_Layout_layout_marginTopPercent = 4;
+        /**
+          <p>This symbol is the offset where the {@link RLHelper.RLHelper.R.attr#layout_widthPercent}
+          attribute's value can be found in the {@link #PercentLayout_Layout} array.
+
+
+          <p>Must be a fractional value, which is a floating point number appended with either % or %p, such as "<code>14.5%</code>".
+The % suffix always means a percentage of the base size; the optional %p suffix provides a size relative to
+some parent container.
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name RLHelper.RLHelper:layout_widthPercent
+        */
+        public static final int PercentLayout_Layout_layout_widthPercent = 0;
         /** Attributes that can be used with a PopupWindow.
            <p>Includes the following attributes:</p>
            <table>

@@ -7,6 +7,7 @@ C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\android\assets\X
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\android\assets\Xamarin.Android.Support.Core.Utils.dll
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\android\assets\Xamarin.Android.Support.Fragment.dll
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\android\assets\Xamarin.Android.Support.Media.Compat.dll
+C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\android\assets\Xamarin.Android.Support.Percent.dll
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\android\assets\Xamarin.Android.Support.v4.dll
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\android\assets\Xamarin.Android.Support.v7.AppCompat.dll
 C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\android\assets\Xamarin.Android.Support.Vector.Drawable.dll

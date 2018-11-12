@@ -2,11 +2,13 @@
 <Paths>
   <Jars></Jars>
   <ResolvedResourceDirectories>
+    <ResolvedResourceDirectory>C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\__library_projects__\Xamarin.Android.Support.Percent\library_project_imports\res</ResolvedResourceDirectory>
     <ResolvedResourceDirectory>C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat\library_project_imports\res</ResolvedResourceDirectory>
   </ResolvedResourceDirectories>
   <ResolvedAssetDirectories />
   <ResolvedEnvironmentFiles />
   <ResolvedResourceDirectoryStamps>
+    <ResolvedResourceDirectoryStamp>C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\__library_projects__\Xamarin.Android.Support.Percent.stamp</ResolvedResourceDirectoryStamp>
     <ResolvedResourceDirectoryStamp>C:\Users\Chameleon\Documents\GitHub\RLHelper\RLHelper\obj\Debug\__library_projects__\Xamarin.Android.Support.v7.AppCompat.stamp</ResolvedResourceDirectoryStamp>
   </ResolvedResourceDirectoryStamps>
 </Paths>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <!-- Unique key for cached download -->
+        <_XbdKey_percent>androidsupport-25.3.1/percent</_XbdKey_percent>
+        
+        <!-- Path to .aar file within the extracted contents of the cached download -->
+        <_XbdAarFile_percent>m2repository\com\android\support\percent\25.3.1\percent-25.3.1.aar</_XbdAarFile_percent>
+        
+        <!-- Full path to .aar file, assuming we had to download to the cache - we reset this later if it is in the sdk -->
+        <_XbdAarFileFullPath_percent>$(XamarinBuildDownloadDir)$(_XbdKey_percent)\percent-25.3.1.aar</_XbdAarFileFullPath_percent>
+
+        <!-- Assembly name to embed .aar in -->
+        <_XbdAssemblyName_percent>Xamarin.Android.Support.Percent</_XbdAssemblyName_percent>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <XamarinBuildRestoreResources Include="_XbdRestoreItems_percent"/>
+    </ItemGroup>
+
+    <Target Name="_XbdRestoreItems_percent">
+        <!-- Check if the aar file is in the android sdk already and change the path to use to it, if it's found -->
+        <CreateProperty Value="$(AndroidSdkDirectory)\extras\android\$(_XbdAarFile_percent)" Condition="Exists('$(AndroidSdkDirectory)\extras\android\$(_XbdAarFile_percent)')">
+            <Output PropertyName="_XbdAarFileFullPath_percent" TaskParameter="Value" />
+        </CreateProperty>
+
+        <ItemGroup>
+            <XamarinBuildDownloadPartialZip Include="$(_XbdKey_percent)" Condition="!Exists('$(_XbdAarFileFullPath_percent)')">
+                <Url>https://dl-ssl.google.com/android/repository/android_m2repository_r47.zip</Url>
+                <ToFile>percent-25.3.1.aar</ToFile>
+                <RangeStart>16153155</RangeStart>
+                <RangeEnd>16165368</RangeEnd>
+                <Md5>bf68ca0f4ccb315cdbf03482c52e040c</Md5>
+                <CustomErrorMessage>Please open the Android SDK Manager and install the latest version of 'Android Support Repository' from the 'Extras' section, and then reload your solution.</CustomErrorMessage>
+                <CustomErrorCode>XBD404</CustomErrorCode>
+            </XamarinBuildDownloadPartialZip>
+        </ItemGroup>
+
+        <ItemGroup>
+            <XamarinBuildDownloadRestoreAssemblyAar Include="$(_XbdAarFileFullPath_percent)">
+                <LogicalName>__AndroidLibraryProjects__.zip</LogicalName>
+                <AssemblyName>$(_XbdAssemblyName_percent)</AssemblyName>
+            </XamarinBuildDownloadRestoreAssemblyAar>
+        </ItemGroup>
+    </Target>
+</Project>

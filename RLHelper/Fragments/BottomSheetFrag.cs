@@ -15,6 +15,9 @@ namespace RLHelper.Fragments
 {
     public class BottomSheetFrag : Android.Support.V4.App.Fragment
     {
+
+
+
         public override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);

@@ -5,35 +5,47 @@
     android:layout_height="match_parent"
     android:minWidth="25px"
     android:minHeight="25px"
-    android:paddingTop="10dp">
+    android:paddingTop="20dp">
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="327.5dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/controlLL"
-        android:background="@drawable/roundedpanel"
+        android:id="@+id/wrapContent"
         android:layout_gravity="center_horizontal"
-        android:elevation="20dp"
-        android:layout_centerHorizontal="true">
-        <EditText
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="71.5dp"
-            android:id="@+id/editText1"
-            android:textColor="@android:color/white" />
-        <Button
-            android:text="Обработать"
-            android:layout_width="153.5dp"
             android:layout_height="wrap_content"
-            android:id="@+id/button1"
-            android:layout_gravity="right"
-            android:textColor="@android:color/white"
-            android:background="#FF7F00"
-            android:layout_marginTop="10dp" />
+            android:id="@+id/controlLL"
+            android:background="@drawable/roundedpanel"
+            android:layout_gravity="center_horizontal"
+            android:elevation="20dp"
+            android:layout_centerHorizontal="true">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="71.5dp"
+                android:id="@+id/inputText"
+                android:textColor="@android:color/white" />
+            <Button
+                android:text="Обработать"
+                android:layout_width="153.5dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/handleBtn"
+                android:layout_gravity="right"
+                android:textColor="@android:color/white"
+                android:background="#FF7F00"
+                android:layout_marginTop="10dp" />
+        </LinearLayout>
     </LinearLayout>
     <FrameLayout
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/bottomsheetfragContent" />
+        android:id="@+id/bottomsheetfragContent"
+        android:translationY="595dp"
+        android:background="@android:color/holo_orange_dark" />
 </FrameLayout>
