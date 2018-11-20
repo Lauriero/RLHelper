@@ -19,22 +19,30 @@
             android:orientation="vertical"
             android:minWidth="25px"
             android:minHeight="25px"
+            android:paddingTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/canvasLayout"
             android:layout_gravity="center">
-            <TextView
-                android:text="распогодилось"
-                android:id="@+id/generalSpellView"
-                android:gravity="center"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:textColor="@android:color/white"
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="15dp"
-                android:textScaleX="1.15" />
+                android:id="@+id/linearLayout4"
+                android:layout_gravity="center">
+                <TextView
+                    android:text="распогодилось"
+                    android:id="@+id/generalSpellView"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:textScaleX="1.15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:orientation="vertical"

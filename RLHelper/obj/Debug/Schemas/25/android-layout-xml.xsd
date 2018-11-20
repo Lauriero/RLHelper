@@ -5,7 +5,7 @@
   <xs:import schemaLocation="schemas.android.com.tools.xsd" namespace="http://schemas.android.com/tools" />
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>12.11.2018 20:46:37</xs:documentation>
+    <xs:documentation>18.11.2018 15:15:33</xs:documentation>
   </xs:annotation>
   <xs:group name="any-view">
     <xs:choice>
@@ -82,6 +82,18 @@
       <xs:element ref="RadioGroup" />
       <xs:element ref="TextSwitcher" />
       <xs:element ref="fragment" />
+      <xs:element ref="android.support.percent.PercentRelativeLayout" />
+      <xs:element ref="android.support.percent.PercentFrameLayout" />
+      <xs:element ref="android.support.v4.widget.Space" />
+      <xs:element ref="android.support.v4.widget.SlidingPaneLayout" />
+      <xs:element ref="android.support.v4.widget.NestedScrollView" />
+      <xs:element ref="android.support.v4.widget.ContentLoadingProgressBar" />
+      <xs:element ref="android.support.v4.widget.DrawerLayout" />
+      <xs:element ref="android.support.v4.widget.SwipeRefreshLayout" />
+      <xs:element ref="android.support.v4.view.ViewPager" />
+      <xs:element ref="android.support.v4.view.PagerTitleStrip" />
+      <xs:element ref="android.support.v4.view.PagerTabStrip" />
+      <xs:element ref="android.support.v4.app.FragmentTabHost" />
       <xs:element ref="android.support.v7.widget.ViewStubCompat" />
       <xs:element ref="android.support.v7.widget.SwitchCompat" />
       <xs:element ref="android.support.v7.widget.SearchView" />
@@ -108,18 +120,6 @@
       <xs:element ref="android.support.v7.view.menu.ExpandedMenuView" />
       <xs:element ref="android.support.v7.view.menu.ListMenuItemView" />
       <xs:element ref="android.support.v7.view.menu.ActionMenuItemView" />
-      <xs:element ref="android.support.percent.PercentRelativeLayout" />
-      <xs:element ref="android.support.percent.PercentFrameLayout" />
-      <xs:element ref="android.support.v4.widget.Space" />
-      <xs:element ref="android.support.v4.widget.SlidingPaneLayout" />
-      <xs:element ref="android.support.v4.widget.NestedScrollView" />
-      <xs:element ref="android.support.v4.widget.ContentLoadingProgressBar" />
-      <xs:element ref="android.support.v4.widget.DrawerLayout" />
-      <xs:element ref="android.support.v4.widget.SwipeRefreshLayout" />
-      <xs:element ref="android.support.v4.view.ViewPager" />
-      <xs:element ref="android.support.v4.view.PagerTitleStrip" />
-      <xs:element ref="android.support.v4.view.PagerTabStrip" />
-      <xs:element ref="android.support.v4.app.FragmentTabHost" />
       <xs:element ref="merge" />
     </xs:choice>
   </xs:group>
@@ -331,9 +331,10 @@
     <xs:attribute ref="android:pointerIcon" />
     <xs:attribute ref="android:forceHasOverlappingRendering" />
     <xs:attribute ref="tools:visibility" />
-    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
+    <xs:attribute ref="android:layout_weight" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_margin" />
     <xs:attribute ref="android:layout_marginLeft" />
     <xs:attribute ref="android:layout_marginTop" />
@@ -1425,9 +1426,10 @@
     <xs:attribute ref="android:fragmentAllowEnterTransitionOverlap" />
     <xs:attribute ref="android:fragmentAllowReturnTransitionOverlap" />
     <xs:attribute ref="tools:layout" />
-    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_width" />
     <xs:attribute ref="android:layout_height" />
+    <xs:attribute ref="android:layout_weight" />
+    <xs:attribute ref="android:layout_gravity" />
     <xs:attribute ref="android:layout_margin" />
     <xs:attribute ref="android:layout_marginLeft" />
     <xs:attribute ref="android:layout_marginTop" />
@@ -1436,6 +1438,128 @@
     <xs:attribute ref="android:layout_marginStart" />
     <xs:attribute ref="android:layout_marginEnd" />
     <xs:attribute ref="android:style" />
+  </xs:complexType>
+  <xs:element name="android.support.percent.PercentRelativeLayout" type="android.support.percent.PercentRelativeLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.Percent.PercentRelativeLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.percent.PercentRelativeLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="RelativeLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.percent.PercentFrameLayout" type="android.support.percent.PercentFrameLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.Percent.PercentFrameLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.percent.PercentFrameLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.widget.Space" type="android.support.v4.widget.Space">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.Widget.Space</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.widget.Space">
+    <xs:complexContent mixed="false">
+      <xs:extension base="View" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.widget.SlidingPaneLayout" type="android.support.v4.widget.SlidingPaneLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.Widget.SlidingPaneLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.widget.SlidingPaneLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.widget.NestedScrollView" type="android.support.v4.widget.NestedScrollView">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.Widget.NestedScrollView</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.widget.NestedScrollView">
+    <xs:complexContent mixed="false">
+      <xs:extension base="FrameLayout" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.widget.ContentLoadingProgressBar" type="android.support.v4.widget.ContentLoadingProgressBar">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.Widget.ContentLoadingProgressBar</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.widget.ContentLoadingProgressBar">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ProgressBar" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.widget.DrawerLayout" type="android.support.v4.widget.DrawerLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.Widget.DrawerLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.widget.DrawerLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup">
+        <xs:attribute ref="tools:openDrawer" />
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.widget.SwipeRefreshLayout" type="android.support.v4.widget.SwipeRefreshLayout">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.Widget.SwipeRefreshLayout</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.widget.SwipeRefreshLayout">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.view.ViewPager" type="android.support.v4.view.ViewPager">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.View.ViewPager</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.view.ViewPager">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.view.PagerTitleStrip" type="android.support.v4.view.PagerTitleStrip">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.View.PagerTitleStrip</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.view.PagerTitleStrip">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.view.PagerTabStrip" type="android.support.v4.view.PagerTabStrip">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.View.PagerTabStrip</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.view.PagerTabStrip">
+    <xs:complexContent mixed="false">
+      <xs:extension base="ViewGroup" />
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="android.support.v4.app.FragmentTabHost" type="android.support.v4.app.FragmentTabHost">
+    <xs:annotation>
+      <xs:documentation>Runtime Type: Android.Support.V4.App.FragmentTabHost</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+  <xs:complexType name="android.support.v4.app.FragmentTabHost">
+    <xs:complexContent mixed="false">
+      <xs:extension base="TabHost" />
+    </xs:complexContent>
   </xs:complexType>
   <xs:element name="android.support.v7.widget.ViewStubCompat" type="android.support.v7.widget.ViewStubCompat">
     <xs:annotation>
@@ -1759,128 +1883,6 @@
   <xs:complexType name="android.support.v7.view.menu.ActionMenuItemView">
     <xs:complexContent mixed="false">
       <xs:extension base="TextView" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.percent.PercentRelativeLayout" type="android.support.percent.PercentRelativeLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.Percent.PercentRelativeLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.percent.PercentRelativeLayout">
-    <xs:complexContent mixed="false">
-      <xs:extension base="RelativeLayout" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.percent.PercentFrameLayout" type="android.support.percent.PercentFrameLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.Percent.PercentFrameLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.percent.PercentFrameLayout">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.widget.Space" type="android.support.v4.widget.Space">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.Widget.Space</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.widget.Space">
-    <xs:complexContent mixed="false">
-      <xs:extension base="View" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.widget.SlidingPaneLayout" type="android.support.v4.widget.SlidingPaneLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.Widget.SlidingPaneLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.widget.SlidingPaneLayout">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.widget.NestedScrollView" type="android.support.v4.widget.NestedScrollView">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.Widget.NestedScrollView</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.widget.NestedScrollView">
-    <xs:complexContent mixed="false">
-      <xs:extension base="FrameLayout" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.widget.ContentLoadingProgressBar" type="android.support.v4.widget.ContentLoadingProgressBar">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.Widget.ContentLoadingProgressBar</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.widget.ContentLoadingProgressBar">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ProgressBar" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.widget.DrawerLayout" type="android.support.v4.widget.DrawerLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.Widget.DrawerLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.widget.DrawerLayout">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup">
-        <xs:attribute ref="tools:openDrawer" />
-      </xs:extension>
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.widget.SwipeRefreshLayout" type="android.support.v4.widget.SwipeRefreshLayout">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.Widget.SwipeRefreshLayout</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.widget.SwipeRefreshLayout">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.view.ViewPager" type="android.support.v4.view.ViewPager">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.View.ViewPager</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.view.ViewPager">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.view.PagerTitleStrip" type="android.support.v4.view.PagerTitleStrip">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.View.PagerTitleStrip</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.view.PagerTitleStrip">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.view.PagerTabStrip" type="android.support.v4.view.PagerTabStrip">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.View.PagerTabStrip</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.view.PagerTabStrip">
-    <xs:complexContent mixed="false">
-      <xs:extension base="ViewGroup" />
-    </xs:complexContent>
-  </xs:complexType>
-  <xs:element name="android.support.v4.app.FragmentTabHost" type="android.support.v4.app.FragmentTabHost">
-    <xs:annotation>
-      <xs:documentation>Runtime Type: Android.Support.V4.App.FragmentTabHost</xs:documentation>
-    </xs:annotation>
-  </xs:element>
-  <xs:complexType name="android.support.v4.app.FragmentTabHost">
-    <xs:complexContent mixed="false">
-      <xs:extension base="TabHost" />
     </xs:complexContent>
   </xs:complexType>
   <xs:element name="merge" type="merge">

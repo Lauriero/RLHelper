@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resources>
+
+  <style name="morphemeTextAppearance">
+    <item name="android:textSize">25dp</item>
+    <item name="android:textScaleX">1.15</item>
+    <item name="android:textColor">@android:color/white</item>
+    <item name="android:textStyle">bold</item>
+  </style>
+</resources>

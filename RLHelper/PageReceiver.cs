@@ -13,9 +13,12 @@ namespace RLHelper
 
         private HttpClient _client = new HttpClient();
 
+        string morphemeResource = "https://udarenieru.ru/index.php?word=on&morph_word=";
+
         string baseQueryString = "https://bugaga.net.ru/orfografija/";
 
-        public event Action<string> OnPageParse;
+        public event Action<string> OnMorphemePageParse;
+        public event Action<string> OnSpellsPageParse;
         public event Action<Exception> OnExceptionThrow;
 
         public void StartGet(string word) {
@@ -31,7 +34,7 @@ namespace RLHelper
         {
             try {
 
-                WebRequest req = WebRequest.Create(baseQueryString + w);
+                WebRequest req = WebRequest.Create(morphemeResource + w);
                 WebResponse resp = await req.GetResponseAsync();
 
                 Stream stream = resp.GetResponseStream();
@@ -40,7 +43,7 @@ namespace RLHelper
 
                 sr.Close();
 
-                OnPageParse?.Invoke(responseString);
+                OnMorphemePageParse?.Invoke(responseString);
 
             } catch (Exception e) {
                 OnExceptionThrow?.Invoke(e);
@@ -57,9 +60,9 @@ namespace RLHelper
                 FormUrlEncodedContent content = new FormUrlEncodedContent(dict);
                 HttpResponseMessage response = await _client.PostAsync(baseQueryString, content);
 
-                string result = await response.Content.ReadAsStringAsync();   
-                
-                OnPageParse?.Invoke(result);
+                string result = await response.Content.ReadAsStringAsync();
+
+                OnSpellsPageParse?.Invoke(result);
 
             } catch (Exception e) {
                 OnExceptionThrow?.Invoke(e);

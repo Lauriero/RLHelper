@@ -11,26 +11,30 @@ namespace RLHelper
 
         public event Action<MorphemeData> OnNewMorphemeData;
         public event Action<Spell> OnNewSpellData;
+        public event Action<string> OnNewInformation;
 
         HtmlParser parser = new HtmlParser();
 
-        public void MorphemeParse(string response) {
+        public async Task MorphemeParse(string response) {
 
             MorphemeData data = new MorphemeData();
 
-            var document = parser.Parse(response);
+            var document = await parser.ParseAsync(response);
 
             var t1 = document.QuerySelector("table#kuz_interpret");
             var t2 = t1.QuerySelector("table");
-            var trS = t2.QuerySelectorAll("tr");
+            var trS = t2.QuerySelectorAll("tr");   
 
             foreach (var tr in trS) {
+                
                 if (tr.QuerySelectorAll("td").Length < 2) { return; }
 
                 var key = tr.QuerySelectorAll("td")[1];
                 var value = tr.QuerySelectorAll("td")[0];
 
-                if (key == null || value == null) { return; }
+                if (key == null || value == null) {
+                    return;
+                }
 
                 if (key.TextContent == "  — префикс (приставка)") {
                     if (data.prefixFirst == "") { data.prefixFirst = value.TextContent; }
@@ -47,9 +51,12 @@ namespace RLHelper
                 } else if (key.TextContent == " — основа слова") {
                     data.basis = value.TextContent;
                 }
+
             }
 
-            OnNewMorphemeData?.Invoke(data);
+            OnNewInformation?.Invoke(data.root);
+
+            //OnNewMorphemeData?.Invoke(data);
         }
 
         public async Task SpellingParse(string response, string queryWord) {
