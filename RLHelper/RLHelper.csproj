@@ -105,6 +105,13 @@
     <Compile Include="Fragments\WordAnalysisFrag.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="MorphemeData.cs" />
+    <Compile Include="Morphemes\Basе.cs" />
+    <Compile Include="Morphemes\Ending.cs" />
+    <Compile Include="Morphemes\Morpheme.cs" />
+    <Compile Include="Morphemes\Postfix.cs" />
+    <Compile Include="Morphemes\Prefix.cs" />
+    <Compile Include="Morphemes\Root.cs" />
+    <Compile Include="Morphemes\Suffix.cs" />
     <Compile Include="PageParser.cs" />
     <Compile Include="PageReceiver.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />

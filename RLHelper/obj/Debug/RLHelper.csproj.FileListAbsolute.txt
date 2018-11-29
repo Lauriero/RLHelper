@@ -133,6 +133,7 @@ C:\Users\Chameleon\Documents\GitHub\REHelper\RLHelper\RLHelper\obj\Debug\res\dra
 C:\Users\Chameleon\Documents\GitHub\REHelper\RLHelper\RLHelper\obj\Debug\res\drawable\strilochkanormalnox3.png
 C:\Users\Chameleon\Documents\GitHub\REHelper\RLHelper\RLHelper\obj\Debug\R.cs.flag
 C:\Users\Chameleon\Documents\GitHub\REHelper\RLHelper\RLHelper\obj\Debug\uploadflags.txt
+C:\Users\Chameleon\Documents\GitHub\REHelper\RLHelper\RLHelper\obj\Debug\RLHelper.csprojResolveAssemblyReference.cache
 C:\Users\Chameleon\Documents\GitHub\REHelper\RLHelper\RLHelper\bin\Debug\RLHelper.dll.mdb
 C:\Users\Chameleon\Documents\GitHub\REHelper\RLHelper\RLHelper\bin\Debug\Java.Interop.dll.mdb
 C:\Users\Chameleon\Documents\GitHub\REHelper\RLHelper\RLHelper\bin\Debug\Microsoft.CSharp.dll.mdb

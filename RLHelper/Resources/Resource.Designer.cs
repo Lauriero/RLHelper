@@ -1714,6 +1714,15 @@ namespace RLHelper
 		public partial class Id
 		{
 			
+			// aapt resource value: 0x7f0a0058
+			public const int MorphemeContainerLayout = 2131361880;
+			
+			// aapt resource value: 0x7f0a005a
+			public const int OutBaseContainerLayout = 2131361882;
+			
+			// aapt resource value: 0x7f0a0059
+			public const int WorldBaseContainerLayout = 2131361881;
+			
 			// aapt resource value: 0x7f0a0063
 			public const int action0 = 2131361891;
 			
@@ -1798,9 +1807,6 @@ namespace RLHelper
 			// aapt resource value: 0x7f0a0064
 			public const int cancel_action = 2131361892;
 			
-			// aapt resource value: 0x7f0a0058
-			public const int canvasLayout = 2131361880;
-			
 			// aapt resource value: 0x7f0a003e
 			public const int checkbox = 2131361854;
 			
@@ -1849,9 +1855,6 @@ namespace RLHelper
 			// aapt resource value: 0x7f0a003d
 			public const int expanded_menu = 2131361853;
 			
-			// aapt resource value: 0x7f0a005a
-			public const int generalSpellView = 2131361882;
-			
 			// aapt resource value: 0x7f0a007a
 			public const int handleBtn = 2131361914;
 			
@@ -1896,9 +1899,6 @@ namespace RLHelper
 			
 			// aapt resource value: 0x7f0a005d
 			public const int linearLayout3 = 2131361885;
-			
-			// aapt resource value: 0x7f0a0059
-			public const int linearLayout4 = 2131361881;
 			
 			// aapt resource value: 0x7f0a0009
 			public const int listMode = 2131361801;

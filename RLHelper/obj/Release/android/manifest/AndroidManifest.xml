@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="RLHelper.RLHelper" android:versionCode="1" android:versionName="1.0">
-  <!--suppress UsesMinSdkAttributes-->
-  <uses-sdk android:minSdkVersion="16" />
-  <application android:label="RLHelper" android:name="android.app.Application" android:allowBackup="true" android:icon="@drawable/icon">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="RLHelper.RLHelper" android:versionCode="1" android:versionName="1.0" android:installLocation="auto">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="21" />
+  <application android:label="RLHelper" android:icon="@drawable/icon" android:name="android.app.Application" android:allowBackup="true">
     <activity android:icon="@drawable/icon" android:label="RLHelper" android:name="md5abcb2c19f1fad1c04f542b05bd5e9050.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
@@ -11,5 +10,5 @@
     </activity>
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="RLHelper.RLHelper.mono.MonoRuntimeProvider.__mono_init__" />
   </application>
-  <activity android:name=".MainActivity" android:windowSoftInputMode="stateUnchanged|adjustResize"></activity>
+  <meta-data android:name="android.support.VERSION" android:value="25.3.1" />
 </manifest>

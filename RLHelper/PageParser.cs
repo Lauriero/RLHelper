@@ -3,13 +3,15 @@ using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using RLHelper.Morphemes;
+using Android.Graphics;
 
 namespace RLHelper
 {
     class PageParser
     {
 
-        public event Action<MorphemeData> OnNewMorphemeData;
+        public event Action<List<Morpheme>> OnNewMorphemeData;
         public event Action<Spell> OnNewSpellData;
         public event Action<string> OnNewInformation;
 
@@ -17,7 +19,7 @@ namespace RLHelper
 
         public async Task MorphemeParse(string response) {
 
-            MorphemeData data = new MorphemeData();
+            List<Morpheme> morphList = new List<Morpheme>();
 
             var document = await parser.ParseAsync(response);
 
@@ -27,36 +29,31 @@ namespace RLHelper
 
             foreach (var tr in trS) {
                 
-                if (tr.QuerySelectorAll("td").Length < 2) { return; }
+                if (tr.QuerySelectorAll("td").Length < 2) { break; }
 
                 var key = tr.QuerySelectorAll("td")[1];
                 var value = tr.QuerySelectorAll("td")[0];
 
-                if (key == null || value == null) {
-                    return;
-                }
+                if (key == null || value == null) { break; }
 
-                if (key.TextContent == "  — префикс (приставка)") {
-                    if (data.prefixFirst == "") { data.prefixFirst = value.TextContent; }
-                    else { data.prefixSecond = value.TextContent; }
+                if (key.TextContent == " — префикс (приставка)") {
+                    morphList.Add(new Prefix(value.TextContent, Color.White));
                 } else if (key.TextContent == " — корень") {
-                    data.root = value.TextContent;       
+                    morphList.Add(new Root(value.TextContent, Color.Red));
                 } else if (key.TextContent == " — суффикс") {
-                    if (data.suffixFirst == "") { data.suffixFirst = value.TextContent; }
-                    else { data.suffixSecond = value.TextContent; }
+                    morphList.Add(new Suffix(value.TextContent, Color.Orange));
                 } else if (key.TextContent == " — нулевое окончание") {
-                    data.ending = "null";    
+                    morphList.Add(new Ending(" ", Color.Green));
                 } else if (key.TextContent == " — окончание") {
-                    data.ending = value.TextContent;     
+                    morphList.Add(new Ending(value.TextContent, Color.Purple));
+                } else if (key.TextContent == " — постфикс") {
+                    morphList.Add(new Postfix(value.TextContent, Color.Blue));
                 } else if (key.TextContent == " — основа слова") {
-                    data.basis = value.TextContent;
+                    morphList.Add(new WorldBase(value.TextContent, Color.Azure));
                 }
-
             }
 
-            OnNewInformation?.Invoke(data.root);
-
-            //OnNewMorphemeData?.Invoke(data);
+            OnNewMorphemeData?.Invoke(morphList);
         }
 
         public async Task SpellingParse(string response, string queryWord) {

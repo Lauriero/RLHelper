@@ -8,10 +8,12 @@ using Android.Text;
 using Android.Text.Style;
 using Android.Graphics;
 using Android.Graphics.Drawables;
+using Android.Views.Animations;
+using RLHelper.Morphemes;
 
 namespace RLHelper.Fragments
 {
-    public class WordAnalysisFrag : Android.Support.V4.App.Fragment
+    public class WordAnalysisFrag : Android.Support.V4.App.Fragment, View.IOnTouchListener
     {
 
         #region Свойства
@@ -26,7 +28,12 @@ namespace RLHelper.Fragments
         string handleWord = "";
         string selectedText = "";
 
-        bool isOpen = true;
+        float mLastPosY;
+        float normalShootTrans;
+        float transDown = 0;
+
+        bool isOpen = false;
+        bool isFullOpen = false;
 
         #endregion
 
@@ -58,7 +65,7 @@ namespace RLHelper.Fragments
 
             parser = new PageParser();
             parser.OnNewMorphemeData += Parser_OnNewMorphemeData;
-            parser.OnNewSpellData += Parser_OnNewSpellData;
+            //parser.OnNewSpellData += Parser_OnNewSpellData;
             parser.OnNewInformation += Parser_OnNewInformation;
 
             Button handleButton = view.FindViewById<Button>(Resource.Id.handleBtn);
@@ -71,122 +78,42 @@ namespace RLHelper.Fragments
 
         #region Получение данных из парсера орфограмм и вывод их
 
-        private void Parser_OnNewSpellData(Spell sp)
-        { 
-            colorText(view.FindViewById<TextView>(Resource.Id.generalSpellView), sp.word, sp.spellsPos);
+        //private void Parser_OnNewSpellData(Spell sp)
+        //{ 
+        //    colorText(view.FindViewById<TextView>(Resource.Id.generalSpellView), sp.word, sp.spellsPos);
 
-        }
+        //}
 
-        private void colorText(TextView tw, string text, List<int> colorPos)
-        {
-            SpannableStringBuilder t = new SpannableStringBuilder(text);
-            ForegroundColorSpan style = new ForegroundColorSpan(Color.Rgb(255, 0, 0));
+        //private void colorText(TextView tw, string text, List<int> colorPos)
+        //{
+        //    SpannableStringBuilder t = new SpannableStringBuilder(text);
+        //    ForegroundColorSpan style = new ForegroundColorSpan(Color.Rgb(255, 0, 0));
 
-            foreach (int pos in colorPos) {
-                t.SetSpan(style, pos, pos + 1, SpanTypes.Composing);
-            }
+        //    foreach (int pos in colorPos) {
+        //        t.SetSpan(style, pos, pos + 1, SpanTypes.Composing);
+        //    }
 
-            tw.TextFormatted = t;
-        }
+        //    tw.TextFormatted = t;
+        //}
 
         #endregion
 
         #region Получение данных из парсера морфем и вывод с графикой
 
-        private void Parser_OnNewMorphemeData(MorphemeData data)
+        private void Parser_OnNewMorphemeData(List<Morpheme> mList)
         {
-            Toast.MakeText(Context, "woork", ToastLength.Long).Show();
+            LinearLayout bLayout = view.FindViewById<LinearLayout>(Resource.Id.WorldBaseContainerLayout);
+            LinearLayout oBLayout = view.FindViewById<LinearLayout>(Resource.Id.OutBaseContainerLayout);
 
-            ViewMorphemes(data);
-
-            
-        }
-
-        private void ViewMorphemes(MorphemeData data) {
-
-            TextView tw = view.FindViewById<TextView>(Resource.Id.generalSpellView);
-            tw.Text = "fwa";
-
-            if (data.prefixFirst != "") {
-                drowPrefix(data.prefixFirst);
-                if (data.prefixSecond != "") {
-                    drowPrefix(data.prefixSecond);
-                }
-            }
-
-            drowRoot(data.root);
-
-            if (data.suffixFirst != "") {
-                drowSuffix(data.suffixFirst);
-                if (data.suffixSecond != "") {
-                    drowSuffix(data.suffixSecond);
-                }
-            }
-
-            if (data.ending != "") {
-                if (data.ending == "null") {
-                    drowNullEnding();
-                } else {
-                    drowEnding(data.ending);
-                }
+            foreach (Morpheme morph in mList) {
                 
+                morph.InitializeDrowing(Context, bLayout, oBLayout);
+                morph.Drow();
+                morph.View();
             }
         }
 
-        private void drowNullEnding()
-        {
-            ;
-        }
-
-        private void drowEnding(string ending)
-        {
-            ;
-        }
-
-        private void drowSuffix(string suffixFirst)
-        {
-            ;
-        }
-
-        private void drowRoot(string root)
-        {
-            ;
-        }
-
-        private void drowPrefix(string prefixFirst)
-        {
-            Toast.MakeText(Context, prefixFirst, ToastLength.Long).Show();
-
-           
-
-            LinearLayout ll = view.FindViewById<LinearLayout>(Resource.Id.linearLayout4);
-            TextView newTextView = new TextView(Context);
-
-            newTextView.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WrapContent, ViewGroup.LayoutParams.WrapContent);
-            newTextView.SetTextAppearance(Resource.Style.morphemeTextAppearance);
-
-            newTextView.Text = prefixFirst;
-
-            Paint pt = new Paint();
-            pt.SetARGB(255, 0, 255, 0);
-
-            Paint mp = new Paint();
-            mp.SetTypeface(newTextView.Typeface);
-            mp.TextScaleX = newTextView.TextScaleX;
-            mp.TextSize = newTextView.TextSize;
-            mp.Color = Color.White;
-
-            Bitmap bt = Bitmap.CreateBitmap((int)mp.MeasureText(prefixFirst), newTextView.Height, Bitmap.Config.Argb8888);
-
-            Canvas canvas = new Canvas(bt);
-
-            canvas.DrawRect(new Rect(0, 5, (int)mp.MeasureText(prefixFirst), 10), pt);
-
-            newTextView.SetBackgroundDrawable(new BitmapDrawable(bt));
-
-            ll.AddView(newTextView);
-        }
-
+        
         #endregion
 
         #region Обработка взаимодействия с элементами управления
@@ -200,17 +127,88 @@ namespace RLHelper.Fragments
 
             //await reciever.createHttpPostRequestAsync(text);
 
-            if (isOpen) {
-                var interpolator = new Android.Views.Animations.OvershootInterpolator(5);
+            LinearLayout bLayout = view.FindViewById<LinearLayout>(Resource.Id.WorldBaseContainerLayout);
+            LinearLayout oBLayout = view.FindViewById<LinearLayout>(Resource.Id.OutBaseContainerLayout);
+            bLayout.RemoveAllViews();
+            oBLayout.RemoveAllViews();
+
+            if (!isOpen) {
+
+                float fTranslation = bottomSheetFragment.TranslationY;
+
+                var interpolator = new OvershootInterpolator(5);
                 bottomSheetFragment.Animate().SetInterpolator(interpolator)
                                     .TranslationYBy(-310)
                                     .SetDuration(500);
 
-                isOpen = false;
+                isOpen = true;
+
+                normalShootTrans = fTranslation - 310;
+                Toast.MakeText(Context, normalShootTrans.ToString(), ToastLength.Short).Show();
+
+                bottomSheetFragment.SetOnTouchListener(this);
             }
 
             await reciever.createHttpGetRequestAsync(text);
 
+        }
+
+        public bool OnTouch(View v, MotionEvent e)
+        {
+            switch(e.Action) {
+                case MotionEventActions.Down:
+                    mLastPosY = e.GetY();
+                    transDown = v.TranslationY;
+                    return true;
+                case MotionEventActions.Move:
+                    float currentPos = e.GetY();
+                    float deltaY = mLastPosY - currentPos;
+
+                    var transY = v.TranslationY;
+                    transY -= deltaY;
+
+                    if (transY < 0) {
+                        transY = 0;
+                    }
+                                            
+                    if (transY > normalShootTrans) {
+                        transY = normalShootTrans;
+                    }
+
+                    v.TranslationY = transY;
+
+                    return true;
+                case MotionEventActions.Up:
+                    float deltaTrans = v.TranslationY - transDown;
+
+                    if (deltaTrans < -60) {
+                        sheetUp();
+                    } else if (deltaTrans > -60 && deltaTrans < 0) {
+                        sheetDefault();
+                    } else if (deltaTrans > 0) {
+                        sheetDown();
+                    }
+
+                    return true;
+                default:
+                    return v.OnTouchEvent(e);
+                    
+            }
+        }
+
+        private void sheetUp() {
+            bottomSheetFragment.Animate().SetInterpolator(new AccelerateDecelerateInterpolator()).TranslationY(0).SetDuration(600);
+            isFullOpen = true;
+        }
+
+        private void sheetDown()
+        {
+            bottomSheetFragment.Animate().SetInterpolator(new AccelerateDecelerateInterpolator()).TranslationY(normalShootTrans).SetDuration(600);
+            isFullOpen = false;
+        }
+
+        private void sheetDefault() {
+            bottomSheetFragment.Animate().SetInterpolator(new AccelerateDecelerateInterpolator()).TranslationY(normalShootTrans).SetDuration(300);
         }
 
         #endregion
@@ -228,9 +226,7 @@ namespace RLHelper.Fragments
         {
             DateTime dt = DateTime.Now;
             await parser.MorphemeParse(resp);
-            TextView tw = view.FindViewById<TextView>(Resource.Id.generalSpellView);
-            //tw.Text = "Обработка...";
-            //Toast.MakeText(Context, (DateTime.Now - dt).ToString(), ToastLength.Short).Show();
+            Toast.MakeText(Context, (DateTime.Now - dt).ToString(), ToastLength.Short).Show();
         }
 
         #endregion
@@ -244,13 +240,12 @@ namespace RLHelper.Fragments
 
         private void Parser_OnNewInformation(string obj)
         {
-            TextView tw = view.FindViewById<TextView>(Resource.Id.generalSpellView);
-            tw.Text = obj;
 
             Toast.MakeText(Context, obj, ToastLength.Short).Show();
         }
 
         #endregion
+
 
     }
 }

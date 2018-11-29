@@ -23,5 +23,16 @@ namespace RLHelper
         public string ending { get; set; }
         public string postfix { get; set; }
 
+        public MorphemeData() {
+            prefixFirst = "";
+            prefixSecond = "";
+            root = "";
+            suffixFirst = "";
+            suffixSecond = "";
+            basis = "";
+            ending = "";
+            postfix = "";
+        }
+
     }
 }

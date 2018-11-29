@@ -2,7 +2,6 @@
 using Android.Widget;
 using Android.OS;
 using Android.Support.V7.App;
-using RLHelper.Fragments;
 
 namespace RLHelper
 {

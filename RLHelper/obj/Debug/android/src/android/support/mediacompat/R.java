@@ -1941,6 +1941,9 @@ containing a value of this type.
         public static final int strilochkonormalnox2=0x7f020062;
     }
     public static final class id {
+        public static final int MorphemeContainerLayout=0x7f0a0058;
+        public static final int OutBaseContainerLayout=0x7f0a005a;
+        public static final int WorldBaseContainerLayout=0x7f0a0059;
         public static final int action0=0x7f0a0063;
         public static final int action_bar=0x7f0a0047;
         public static final int action_bar_activity_content=0x7f0a0000;
@@ -1969,7 +1972,6 @@ containing a value of this type.
         public static final int bottomsheetfragContent=0x7f0a007b;
         public static final int buttonPanel=0x7f0a002e;
         public static final int cancel_action=0x7f0a0064;
-        public static final int canvasLayout=0x7f0a0058;
         public static final int checkbox=0x7f0a003e;
         public static final int chronometer=0x7f0a006c;
         public static final int collapseActionView=0x7f0a001e;
@@ -1986,7 +1988,6 @@ containing a value of this type.
         public static final int end_padder=0x7f0a0076;
         public static final int expand_activities_button=0x7f0a0028;
         public static final int expanded_menu=0x7f0a003d;
-        public static final int generalSpellView=0x7f0a005a;
         public static final int handleBtn=0x7f0a007a;
         public static final int home=0x7f0a0004;
         public static final int homeAsUp=0x7f0a000d;
@@ -2002,7 +2003,6 @@ containing a value of this type.
         public static final int linearLayout1=0x7f0a0056;
         public static final int linearLayout2=0x7f0a005b;
         public static final int linearLayout3=0x7f0a005d;
-        public static final int linearLayout4=0x7f0a0059;
         public static final int listMode=0x7f0a0009;
         public static final int list_item=0x7f0a002b;
         public static final int media_actions=0x7f0a0066;
