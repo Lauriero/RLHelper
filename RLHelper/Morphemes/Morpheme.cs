@@ -11,8 +11,9 @@ namespace RLHelper.Morphemes
     class Morpheme
     {
         public string morphemeText { get; set; }
+        public TextView newTextView { get; set; }
 
-        protected TextView _newTextView;
+
         protected Paint _pt;
         protected Canvas _canvas;
         protected Context _cont;
@@ -37,18 +38,18 @@ namespace RLHelper.Morphemes
 
             _morphPadding = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, 3, _cont.Resources.DisplayMetrics);
 
-            _newTextView = new TextView(c);
+            newTextView = new TextView(c);
 
-            _newTextView.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WrapContent, ViewGroup.LayoutParams.WrapContent);
-            _newTextView.SetPadding(_morphPadding, 2, _morphPadding, 0);
-            _newTextView.SetTextAppearance(Resource.Style.morphemeTextAppearance);
+            newTextView.LayoutParameters = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WrapContent, ViewGroup.LayoutParams.WrapContent);
+            newTextView.SetPadding(_morphPadding, 2, _morphPadding, 0);
+            newTextView.SetTextAppearance(_cont, Resource.Style.morphemeTextAppearance);
 
-            _newTextView.Text = morphemeText;
+            newTextView.Text = morphemeText;
 
             Paint mp = new Paint();
-            mp.SetTypeface(_newTextView.Typeface);
-            mp.TextScaleX = _newTextView.TextScaleX;
-            mp.TextSize = _newTextView.TextSize;
+            mp.SetTypeface(newTextView.Typeface);
+            mp.TextScaleX = newTextView.TextScaleX;
+            mp.TextSize = newTextView.TextSize;
 
             _textWidth = (int)mp.MeasureText(morphemeText);
 
@@ -60,8 +61,8 @@ namespace RLHelper.Morphemes
         public virtual void Drow() { ; }
 
         public virtual void View() {
-            _newTextView.SetBackgroundDrawable(new BitmapDrawable(_bt));
-            _bCLayout.AddView(_newTextView);
+            newTextView.SetBackgroundDrawable(new BitmapDrawable(_bt));
+            _bCLayout.AddView(newTextView);
         }
 
     }

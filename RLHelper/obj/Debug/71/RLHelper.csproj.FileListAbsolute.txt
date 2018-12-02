@@ -1,0 +1,3 @@
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\71\MonoAndroid,Version=v7.1.AssemblyAttributes.cs
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\71\RLHelper.nuget.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\71\RLHelper.csprojAssemblyReference.cache

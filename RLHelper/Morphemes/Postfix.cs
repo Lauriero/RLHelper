@@ -26,8 +26,8 @@ namespace RLHelper.Morphemes
 
         public override void View()
         {
-            _newTextView.SetBackgroundDrawable(new BitmapDrawable(_bt));
-            _oBCLayout.AddView(_newTextView);
+            newTextView.SetBackgroundDrawable(new BitmapDrawable(_bt));
+            _oBCLayout.AddView(newTextView);
         }
     }
 }

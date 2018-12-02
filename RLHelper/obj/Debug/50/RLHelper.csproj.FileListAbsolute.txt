@@ -1,0 +1,16 @@
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\MonoAndroid,Version=v5.0.AssemblyAttributes.cs
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\RLHelper.nuget.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\RLHelper.csprojAssemblyReference.cache
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\XbdMerge\Xamarin.Android.Support.Annotations.dll.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\XbdMerge\Xamarin.Android.Support.Compat.dll.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\XbdMerge\Xamarin.Android.Support.Core.UI.dll.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\XbdMerge\Xamarin.Android.Support.Core.Utils.dll.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\XbdMerge\Xamarin.Android.Support.Media.Compat.dll.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\XbdMerge\Xamarin.Android.Support.Fragment.dll.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\XbdMerge\Xamarin.Android.Support.v4.dll.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\XbdMerge\Xamarin.Android.Support.Vector.Drawable.dll.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\XbdMerge\Xamarin.Android.Support.Animated.Vector.Drawable.dll.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\XbdMerge\Xamarin.Android.Support.Percent.dll.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\XbdMerge\Xamarin.Android.Support.v7.AppCompat.dll.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\libraryimports.cache.stamp
+C:\Users\Chameleon\Documents\Development\GitHub\RLHelper\RLHelper\obj\Debug\50\res.flag

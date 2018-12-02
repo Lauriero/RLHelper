@@ -10,6 +10,7 @@ using Android.Graphics;
 using Android.Graphics.Drawables;
 using Android.Views.Animations;
 using RLHelper.Morphemes;
+using Android.Util;
 
 namespace RLHelper.Fragments
 {
@@ -25,12 +26,14 @@ namespace RLHelper.Fragments
         PageReceiver reciever;
         PageParser parser;
 
+        Spell wordSpell;
+
         string handleWord = "";
         string selectedText = "";
 
         float mLastPosY;
-        float normalShootTrans;
         float transDown = 0;
+        float semiOpenShootTrans;
 
         bool isOpen = false;
         bool isFullOpen = false;
@@ -38,6 +41,8 @@ namespace RLHelper.Fragments
         #endregion
 
         #region Методы для отображения фрагмента и реализация при запуске
+
+        public delegate void TestEventHandler(object sender, object e);
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -50,13 +55,26 @@ namespace RLHelper.Fragments
         {
             view = inflater.Inflate(Resource.Layout.WordAnalysisFrag, container, false);
 
+            view.Post(() => {
+                OnLoadView();
+            });
+
+            return view;
+        }
+
+        public void OnLoadView() {
+
+            int fragmentHigh = View.Height;
+
             bottomSheetFragment = view.FindViewById<FrameLayout>(Resource.Id.bottomsheetfragContent);
+            bottomSheetFragment.TranslationY = bottomSheetFragment.Height;
+            semiOpenShootTrans = bottomSheetFragment.TranslationY - bottomSheetFragment.TranslationY / 4;
+
+            Toast.MakeText(Context, bottomSheetFragment.Height.ToString(), ToastLength.Short).Show();
 
             var trans = Activity.SupportFragmentManager.BeginTransaction();
             trans.Add(bottomSheetFragment.Id, new BottomSheetFrag(), "BottomSheet Fragment");
             trans.Commit();
-
-            Toast.MakeText(Context, "work", ToastLength.Long);
 
             reciever = new PageReceiver();
             reciever.OnMorphemePageParse += Reciever_OnMorphemePageRecieve;
@@ -65,36 +83,36 @@ namespace RLHelper.Fragments
 
             parser = new PageParser();
             parser.OnNewMorphemeData += Parser_OnNewMorphemeData;
-            //parser.OnNewSpellData += Parser_OnNewSpellData;
+            parser.OnNewSpellData += Parser_OnNewSpellData;
             parser.OnNewInformation += Parser_OnNewInformation;
 
             Button handleButton = view.FindViewById<Button>(Resource.Id.handleBtn);
             handleButton.Click += HandleButton_Click;
 
-            return view;
         }
 
         #endregion
 
         #region Получение данных из парсера орфограмм и вывод их
 
-        //private void Parser_OnNewSpellData(Spell sp)
-        //{ 
-        //    colorText(view.FindViewById<TextView>(Resource.Id.generalSpellView), sp.word, sp.spellsPos);
+        private async void Parser_OnNewSpellData(Spell sp)
+        {
+            wordSpell = sp;
 
-        //}
+            await reciever.createHttpGetRequestAsync(sp.word);
+        }
 
-        //private void colorText(TextView tw, string text, List<int> colorPos)
-        //{
-        //    SpannableStringBuilder t = new SpannableStringBuilder(text);
-        //    ForegroundColorSpan style = new ForegroundColorSpan(Color.Rgb(255, 0, 0));
+        private void colorText(TextView tw, string text, List<int> colorPos)
+        {
+            SpannableStringBuilder t = new SpannableStringBuilder(text);
+            ForegroundColorSpan style = new ForegroundColorSpan(Color.Rgb(255, 0, 0));
 
-        //    foreach (int pos in colorPos) {
-        //        t.SetSpan(style, pos, pos + 1, SpanTypes.Composing);
-        //    }
+            foreach (int pos in colorPos) {
+                t.SetSpan(style, pos, pos + 1, SpanTypes.Composing);
+            }
 
-        //    tw.TextFormatted = t;
-        //}
+            tw.TextFormatted = t;
+        }
 
         #endregion
 
@@ -102,11 +120,24 @@ namespace RLHelper.Fragments
 
         private void Parser_OnNewMorphemeData(List<Morpheme> mList)
         {
+            int strPos = 0;
+
             LinearLayout bLayout = view.FindViewById<LinearLayout>(Resource.Id.WorldBaseContainerLayout);
             LinearLayout oBLayout = view.FindViewById<LinearLayout>(Resource.Id.OutBaseContainerLayout);
 
             foreach (Morpheme morph in mList) {
-                
+                List<int> spellPositions = new List<int>();
+
+                foreach (int spPos in wordSpell.spellsPos) {
+                    if (spPos > strPos && spPos < strPos + morph.morphemeText.Length - 1) {
+                        spellPositions.Add(spPos);
+                    } else { break; }
+                }
+
+                if (spellPositions.Count > 0) { colorText(morph.newTextView, morph.morphemeText, spellPositions); }
+
+                strPos += morph.morphemeText.Length - 1;
+
                 morph.InitializeDrowing(Context, bLayout, oBLayout);
                 morph.Drow();
                 morph.View();
@@ -125,7 +156,7 @@ namespace RLHelper.Fragments
             string text = textInput.Text;
             handleWord = text;
 
-            //await reciever.createHttpPostRequestAsync(text);
+            await reciever.createHttpPostRequestAsync(text);
 
             LinearLayout bLayout = view.FindViewById<LinearLayout>(Resource.Id.WorldBaseContainerLayout);
             LinearLayout oBLayout = view.FindViewById<LinearLayout>(Resource.Id.OutBaseContainerLayout);
@@ -134,22 +165,19 @@ namespace RLHelper.Fragments
 
             if (!isOpen) {
 
-                float fTranslation = bottomSheetFragment.TranslationY;
-
                 var interpolator = new OvershootInterpolator(5);
                 bottomSheetFragment.Animate().SetInterpolator(interpolator)
-                                    .TranslationYBy(-310)
+                                    .TranslationY(semiOpenShootTrans)
                                     .SetDuration(500);
 
                 isOpen = true;
 
-                normalShootTrans = fTranslation - 310;
-                Toast.MakeText(Context, normalShootTrans.ToString(), ToastLength.Short).Show();
+                Toast.MakeText(Context, semiOpenShootTrans.ToString(), ToastLength.Short).Show();
 
                 bottomSheetFragment.SetOnTouchListener(this);
             }
 
-            await reciever.createHttpGetRequestAsync(text);
+            
 
         }
 
@@ -171,8 +199,8 @@ namespace RLHelper.Fragments
                         transY = 0;
                     }
                                             
-                    if (transY > normalShootTrans) {
-                        transY = normalShootTrans;
+                    if (transY > semiOpenShootTrans) {
+                        transY = semiOpenShootTrans;
                     }
 
                     v.TranslationY = transY;
@@ -203,12 +231,12 @@ namespace RLHelper.Fragments
 
         private void sheetDown()
         {
-            bottomSheetFragment.Animate().SetInterpolator(new AccelerateDecelerateInterpolator()).TranslationY(normalShootTrans).SetDuration(600);
+            bottomSheetFragment.Animate().SetInterpolator(new AccelerateDecelerateInterpolator()).TranslationY(semiOpenShootTrans).SetDuration(600);
             isFullOpen = false;
         }
 
         private void sheetDefault() {
-            bottomSheetFragment.Animate().SetInterpolator(new AccelerateDecelerateInterpolator()).TranslationY(normalShootTrans).SetDuration(300);
+            bottomSheetFragment.Animate().SetInterpolator(new AccelerateDecelerateInterpolator()).TranslationY(semiOpenShootTrans).SetDuration(300);
         }
 
         #endregion
@@ -231,7 +259,7 @@ namespace RLHelper.Fragments
 
         #endregion
 
-        #region Обработка исключений
+        #region Дополнительные методы для перевода, исключений и т.д.
 
         private void Reciever_OnExceptionThrow(Exception ex)
         {
@@ -244,8 +272,13 @@ namespace RLHelper.Fragments
             Toast.MakeText(Context, obj, ToastLength.Short).Show();
         }
 
-        #endregion
+        private int pxToDp(int px) {
+            int dp = (int)TypedValue.ApplyDimension(ComplexUnitType.Px, px, Context.Resources.DisplayMetrics);
+            return dp;
+        }
 
+        #endregion 
 
     }
+ 
 }
