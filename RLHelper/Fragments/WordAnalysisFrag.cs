@@ -11,6 +11,7 @@ using Android.Graphics.Drawables;
 using Android.Views.Animations;
 using RLHelper.Morphemes;
 using Android.Util;
+using System.IO;
 
 namespace RLHelper.Fragments
 {
@@ -41,8 +42,6 @@ namespace RLHelper.Fragments
         #endregion
 
         #region Методы для отображения фрагмента и реализация при запуске
-
-        public delegate void TestEventHandler(object sender, object e);
 
         public override void OnCreate(Bundle savedInstanceState)
         {
@@ -109,6 +108,7 @@ namespace RLHelper.Fragments
 
             foreach (int pos in colorPos) {
                 t.SetSpan(style, pos, pos + 1, SpanTypes.Composing);
+                Toast.MakeText(Context, pos, ToastLength.Short).Show();
             }
 
             tw.TextFormatted = t;
@@ -126,19 +126,20 @@ namespace RLHelper.Fragments
             LinearLayout oBLayout = view.FindViewById<LinearLayout>(Resource.Id.OutBaseContainerLayout);
 
             foreach (Morpheme morph in mList) {
+                morph.InitializeDrowing(Context, bLayout, oBLayout);
+
                 List<int> spellPositions = new List<int>();
-
                 foreach (int spPos in wordSpell.spellsPos) {
-                    if (spPos > strPos && spPos < strPos + morph.morphemeText.Length - 1) {
-                        spellPositions.Add(spPos);
-                    } else { break; }
+                    if (spPos > strPos) {
+                        if (spPos < strPos + morph.morphemeText.Length - 1) {
+                            spellPositions.Add(spPos - strPos);
+                        } else { break; }
+                    }
                 }
-
                 if (spellPositions.Count > 0) { colorText(morph.newTextView, morph.morphemeText, spellPositions); }
 
-                strPos += morph.morphemeText.Length - 1;
+                strPos += morph.morphemeText.Length;
 
-                morph.InitializeDrowing(Context, bLayout, oBLayout);
                 morph.Drow();
                 morph.View();
             }
@@ -246,6 +247,7 @@ namespace RLHelper.Fragments
         private async void Reciever_OnSpellsPageRecieve(string resp)
         {
             DateTime dt = DateTime.Now;
+
             await parser.SpellingParse(resp, handleWord);
             Toast.MakeText(Context, (DateTime.Now - dt).ToString(), ToastLength.Short).Show();
         }
@@ -270,11 +272,6 @@ namespace RLHelper.Fragments
         {
 
             Toast.MakeText(Context, obj, ToastLength.Short).Show();
-        }
-
-        private int pxToDp(int px) {
-            int dp = (int)TypedValue.ApplyDimension(ComplexUnitType.Px, px, Context.Resources.DisplayMetrics);
-            return dp;
         }
 
         #endregion 

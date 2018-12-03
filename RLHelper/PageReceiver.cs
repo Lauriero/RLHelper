@@ -14,21 +14,11 @@ namespace RLHelper
         private HttpClient _client = new HttpClient();
 
         string morphemeResource = "https://udarenieru.ru/index.php?word=on&morph_word=";
-
-        string baseQueryString = "https://bugaga.net.ru/orfografija/";
+        string spellsResource = "https://bugaga.net.ru/orfografija/";
 
         public event Action<string> OnMorphemePageParse;
         public event Action<string> OnSpellsPageParse;
         public event Action<Exception> OnExceptionThrow;
-
-        public void StartGet(string word) {
-            Task.Run(() => createHttpGetRequestAsync(word));
-        }
-
-        public void StartPost(string text)
-        {
-            Task.Run(() => createHttpPostRequestAsync(text));
-        }
 
         public async Task createHttpGetRequestAsync(string w)
         {
@@ -58,7 +48,7 @@ namespace RLHelper
                 };
 
                 FormUrlEncodedContent content = new FormUrlEncodedContent(dict);
-                HttpResponseMessage response = await _client.PostAsync(baseQueryString, content);
+                HttpResponseMessage response = await _client.PostAsync(spellsResource, content);
 
                 string result = await response.Content.ReadAsStringAsync();
 
